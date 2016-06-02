@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Sentiment Distribution</title>
+    <script type="text/javascript" src="d3.js"></script>
+    <link href="SentiBar.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div id = "tooltip" class = "hidden">
+		<p><strong><span id="name"></span></strong></p>
+		<p>pv: <span id="value1"></span>   nv: <span id="value2"></span></p>
+		<p>Date: <span id="value"></span></p>
+</div>
+
+<div id = "graphtitle">
+	<h1>Sentiment Distribution<h1>
+</div>
+
+<div id = "svgpaper"> 	
+</div>
+
+<script src="comment.js"></script>
+<script src="mp01_np-2.js"></script>
+<script src = "render.js"></script>
+<!--绘图部分-->
+<script>	
+		
+		var axisHeight = 200;
+		var maxValue = 1;
+		var barwidth = 3;
+		var gap = 0;
+			
+		var margin = {top: 50, right: 40, bottom: 60, left: 40},		    
+		    width = 1300,
+		    height = 500;
+
+		var zeroline = axisHeight + margin.top;
+
+		var svg = d3.select("#svgpaper").append("svg")
+					   .attr("width",width)
+					   .attr("height",height);
+
+		var parseDate = d3.time.format("%Y-%m-%d").parse;
+
+		var yScale = d3.scale.linear()
+								.domain([0,maxValue])
+							.range([0,axisHeight]);
+		var rScale = d3.scale.linear()
+								.domain([0,maxValue])
+							.range([1,5]);
+		var yAxisScale1 = d3.scale.linear()
+								.domain([0,maxValue])
+							.range([axisHeight, 0]);
+		var yAxis1 = d3.svg.axis()
+							.scale(yAxisScale1)
+							.orient("left")
+							.ticks(5);
+		var yAxisScale2 = d3.scale.linear()
+								.domain([0,-maxValue])
+							.range([0,axisHeight]);
+		var yAxis2 = d3.svg.axis()
+							.scale(yAxisScale2)
+							.orient("left")
+							.ticks(5);
+		var xAxisScale = d3.time.scale().range([0, width-margin.left-margin.right])
+										.domain(d3.extent(npList.map(function(d) { return parseDate(d.date); })));
+										
+		var xAxis = d3.svg.axis()
+							.scale(xAxisScale)
+							.orient("bottom")
+							.ticks(12);
+
+		svg.append("g")
+					.attr("class","axis")
+					.attr("transform","translate("+margin.left+","+margin.top+")" )
+					.call(yAxis1);
+		svg.append("g")
+					.attr("class","axis")
+					.attr("transform","translate("+margin.left+","+zeroline+")")
+					.call(yAxis2);
+		svg.append("g")
+					.attr("class","axis")
+					.attr("transform","translate("+margin.left+","+zeroline+")")
+					.call(xAxis);
+
+		var colorScale1 = d3.scale.linear()
+							.domain([1,0])
+								.range(["#FF6347","#FFC68E"]);
+		var colorScale2 = d3.scale.linear()
+							.domain([1,0])
+								.range(["#40E0D0","#80FFFF"]);
+
+		render_bar(npList);
+
+</script>
+
+
+
+
+	<footer>
+		<p>
+		&copy; Copyright  by Chang MEN 2015
+		</p>
+	</footer>
+</body>
+</html>

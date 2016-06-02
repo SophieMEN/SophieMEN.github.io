@@ -1,0 +1,86 @@
+h2 {
+	font-family: Microsoft Yahei;
+	font-size:20px;
+	vertical-align: middle;
+}
+
+.axis path,
+.axis line{
+		fill:none;
+		stroke:black;
+		shape-rendering:crispEdges;
+}
+.axis text{
+		font-family:Microsoft Yahei;
+		font-size:11px;
+}
+
+
+#bars1,#bars2{
+	fill: none;
+}
+
+rect:hover {
+	fill: #9AFF02;
+}
+
+#graphtitle{
+	width:300px;
+	height: 30px;
+	margin:2px auto;
+}
+
+#graphtitle h1{
+	font-family: Microsoft Yahei;
+	font-size:20px;
+	text-align: center;
+}
+rect {
+	fill-opacity:0.7;
+}
+circle
+{
+	stroke:#9d9d9d;
+	stroke-width:1px;
+
+}
+
+#sv1{
+	color:#54091C;
+}
+
+#sv2{
+	color:#7F6B00;
+}
+
+#svgpaper {
+	width:1300px;
+	height: 500px;
+	margin:2px auto;
+}
+
+#tooltip {
+	position: absolute;
+	width: 500px;
+	height: auto;
+	padding: 10px;
+	background-color: white;
+	-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+	opacity: 0.8;
+	
+}
+
+#tooltip.hidden {
+	display: none;
+}
+
+#tooltip p {
+	margin: 0;
+	font-family:Microsoft Yahei;
+	font-size:14px;
+	line-height: 20px;
+}
+
