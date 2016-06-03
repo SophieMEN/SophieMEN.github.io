@@ -1,5 +1,6 @@
 ---
 layout: home
+title: SophieMEN's Blog
 ---
 
 <div class="index-content blog">
