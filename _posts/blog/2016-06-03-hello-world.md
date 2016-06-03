@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello,blog world!
+title: Hello, blog world!
 category: blog
 description: 我的第一篇博客
 ---
