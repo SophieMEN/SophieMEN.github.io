@@ -1,11 +1,13 @@
 auto: true
 
-#markdown: rdiscount
+markdown: rdiscount
 highlighter: 'pygments'
 #paginate: 8
 permalink: /:title
 
 title: SophieMEN's Blog
 url: http://sophiemen.github.io
+description: From VISUALIZATION to INSPIRATION
+url: http://mukosame.github.io
 feed: /atom.xml
 author_info: <a href="http://sophiemen.github.io/">SophieMEN</a>
