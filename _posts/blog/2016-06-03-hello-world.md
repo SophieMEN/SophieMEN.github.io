@@ -19,10 +19,10 @@ description: 我的第一篇博客
 ###鸣谢
 
 - 感谢本站模板的原作者[@Beiyuu]及改进者[@Mukosame]。
-- 感谢大珍。侧边栏图片均为大珍作品，更多美图请访问[宋天瑜的图博]。
+- 感谢大珍。侧边栏图片均为大珍作品，更多美图请访问[宋天瑜的图虫主页]。
 
 
-[@Beiyuu]:<https://github.com/beiyuu>
-[@Mukosame]:<https://github.com/Mukosame>
-[宋天瑜的图博]:<https://tysong.tuchong.com/>
+[@Beiyuu]:https://github.com/beiyuu
+[@Mukosame]:https://github.com/Mukosame
+[宋天瑜的图虫主页]:https://tysong.tuchong.com/
 
