@@ -8,17 +8,40 @@
 		
 			
 			<item>
-				<title>Hello,world!</title>
+				<title>Hello, blog world!</title>
 				
-					<description>&lt;p&gt;喵~&lt;/p&gt;
-&lt;p&gt;喵喵~&lt;/p&gt;
-&lt;p&gt;喵喵喵~&lt;/p&gt;
-
+					<description>&lt;h3&gt;0.1基础&lt;/h3&gt;
 </description>
 				
 				<pubDate>Fri, 03 Jun 2016 00:00:00 +0800</pubDate>
 				<link>http://mukosame.github.io/hello-world</link>
 				<guid isPermaLink="true">http://mukosame.github.io/hello-world</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Hello, we are Dream Team!</title>
+				
+					<description>&lt;h3&gt;组建&lt;/h3&gt;
+</description>
+				
+				<pubDate>Fri, 03 Jun 2016 00:00:00 +0800</pubDate>
+				<link>http://mukosame.github.io/first-team-blog</link>
+				<guid isPermaLink="true">http://mukosame.github.io/first-team-blog</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Hello, we are Dream Team!</title>
+				
+					<description>&lt;h3&gt;组建&lt;/h3&gt;
+</description>
+				
+				<pubDate>Fri, 03 Jun 2016 00:00:00 +0800</pubDate>
+				<link>http://mukosame.github.io/first-team-blog</link>
+				<guid isPermaLink="true">http://mukosame.github.io/first-team-blog</guid>
 			</item>
 			
 		
